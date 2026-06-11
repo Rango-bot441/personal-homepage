@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>张彪｜AI 产品运营（创作者方向）</title>
-  <meta name="description" content="张彪个人主页，聚焦 AI 产品运营、创作者增长、内容效率、数据验证与业务原型能力。">
-  <meta property="og:title" content="张彪｜AI 产品运营（创作者方向）">
-  <meta property="og:description" content="近4年教育创作者运营，4个AI原型工具，覆盖选题→创作→发布→复盘全链路。">
+  <title>张彪｜内容增长与 AI 运营作品集</title>
+  <meta name="description" content="张彪个人主页，整理内容增长、创作者协作、账号矩阵、自然流获客与 AI 运营工具实践作品。">
+  <meta property="og:title" content="张彪｜内容增长与 AI 运营作品集">
+  <meta property="og:description" content="近4年内容增长与创作者运营经验，结合可运行 AI 工具，覆盖选题、审核、社群答疑、复盘和增长验证。">
   <meta property="og:type" content="website">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -89,7 +89,7 @@
     body.warm .method-desc{color:#777}
     body.warm .method-connector{background:rgba(0,0,0,.08)}
     body.warm .skill-card{background:rgba(255,255,255,.8)}
-    body.warm .skill-card:hover{background:rgba(255,255,255,.98);box-shadow:0 0 0 2px rgba(232,69,10,.25) inset,0 12px 48px rgba(0,0,0,.12);transform:scale(1.06) translateZ(0)}
+    body.warm .skill-card:hover{background:rgba(232,69,10,.06);box-shadow:0 20px 50px rgba(0,0,0,.08);transform:translateY(-6px) scale(1.02)}
     body.warm .skill-card h4{color:#1a1a1a}
     body.warm .skill-tag{background:rgba(0,0,0,.03);border-color:rgba(0,0,0,.1);color:#555}
     body.warm .skills-wrap{background:rgba(0,0,0,.04);border-color:rgba(0,0,0,.08)}
@@ -225,6 +225,13 @@
     .card-metric .metric-bar{position:absolute;bottom:0;left:0;height:2px;background:var(--accent);border-radius:0 2px 0 0;animation:metricFill 2s ease-out forwards}
     .card-metric:nth-child(1) .metric-bar{width:85%}
     .card-metric:nth-child(2) .metric-bar{width:65%;animation-delay:.3s}
+    .hero-proof-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-top:18px;padding-top:16px;border-top:1px solid rgba(255,255,255,.07)}
+    .hero-proof{padding:10px 10px;border:1px solid rgba(255,255,255,.07);border-radius:10px;background:rgba(255,255,255,.035)}
+    .hero-proof b{display:block;color:#fff;font-size:14px;line-height:1.1;margin-bottom:4px}
+    .hero-proof span{display:block;color:rgba(255,255,255,.42);font-size:10.5px;line-height:1.35}
+    body.warm .hero-proof{border-color:rgba(0,0,0,.07);background:rgba(0,0,0,.025)}
+    body.warm .hero-proof b{color:#1a1a1a}
+    body.warm .hero-proof span{color:rgba(0,0,0,.48)}
     @keyframes metricFill{from{width:0}to{width:inherit}}
     @keyframes slideIn{to{opacity:1;transform:translateY(0)}}
 
@@ -252,12 +259,15 @@
     #works::before{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse at 80% 30%,rgba(232,69,10,.07) 0%,transparent 55%),radial-gradient(ellipse at 10% 70%,rgba(59,130,246,.05) 0%,transparent 45%);z-index:0}
     #about{background:rgba(255,255,255,.04)}
     #about::before{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse at 20% 40%,rgba(232,69,10,.06) 0%,transparent 50%),radial-gradient(ellipse at 75% 80%,rgba(167,139,250,.04) 0%,transparent 45%);z-index:0}
+    #role-fit{background:rgba(255,255,255,.018)}
+    #role-fit::before{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse at 18% 10%,rgba(232,69,10,.08) 0%,transparent 50%),radial-gradient(ellipse at 82% 72%,rgba(59,130,246,.055) 0%,transparent 46%);z-index:0}
     #insights{background:rgba(255,255,255,.025)}
     #insights::before{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse at 50% 20%,rgba(74,222,128,.05) 0%,transparent 50%),radial-gradient(ellipse at 85% 70%,rgba(232,69,10,.05) 0%,transparent 45%);z-index:0}
     .head{display:block;text-align:center;margin-bottom:56px}
     .head .kicker{display:block;margin-bottom:16px}
     .head .title{margin-bottom:14px}
     .head .sub{max-width:580px;margin:0 auto;color:rgba(255,255,255,.55);font-size:15px;line-height:1.8}
+    #about .head .sub{max-width:820px;font-size:16px;line-height:1.75}
     .head-full{display:block;margin-bottom:64px}
     .head-full .kicker{display:block;margin-bottom:20px}
     .head-full .title{margin-bottom:16px}
@@ -283,19 +293,21 @@
     .reveal.visible,.reveal-left.visible,.reveal-right.visible,.reveal-pop.visible{opacity:1;transform:none}
     .d1{transition-delay:.1s!important}.d2{transition-delay:.2s!important}.d3{transition-delay:.3s!important}.d4{transition-delay:.4s!important}.d5{transition-delay:.5s!important}.d6{transition-delay:.6s!important}
 
-    .about-grid{display:grid;grid-template-columns:1fr 1.6fr;gap:clamp(32px,5vw,72px);align-items:center}
+    .about-grid{display:grid;grid-template-columns:minmax(240px,.78fr) 1.72fr;gap:clamp(32px,5vw,72px);align-items:center}
     .about-left{display:flex;flex-direction:column;gap:28px}
-    .about-photo-wrap{position:relative;width:100%;max-width:320px;aspect-ratio:3/4;border-radius:16px;overflow:hidden;border:2px solid rgba(255,255,255,.1);box-shadow:0 20px 60px rgba(0,0,0,.3),0 0 0 1px rgba(255,255,255,.05);transition:transform .5s ease, box-shadow .5s ease}
+    .about-photo-wrap{position:relative;width:100%;max-width:260px;aspect-ratio:3/4;border-radius:16px;overflow:hidden;border:2px solid rgba(255,255,255,.1);box-shadow:0 20px 60px rgba(0,0,0,.3),0 0 0 1px rgba(255,255,255,.05);transition:transform .5s ease, box-shadow .5s ease}
     .about-photo-wrap:hover{transform:translateY(-4px);box-shadow:0 28px 70px rgba(232,69,10,.15),0 0 0 1px rgba(232,69,10,.2)}
     .about-photo-wrap::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 60%,rgba(10,10,15,.6) 100%);pointer-events:none}
     .about-photo{width:100%;height:100%;object-fit:cover;object-position:center top;display:block;filter:grayscale(10%) contrast(1.05);transition:filter .4s ease}
     .about-photo-wrap:hover .about-photo{filter:grayscale(0%) contrast(1.08)}
     .about-photo-label{position:absolute;bottom:16px;left:16px;z-index:2;display:flex;align-items:center;gap:8px;padding:8px 14px;background:rgba(10,10,15,.7);border:1px solid rgba(255,255,255,.12);border-radius:8px;backdrop-filter:blur(12px);font-size:13px;font-weight:600;color:#fff}
     .about-photo-label .dot{width:6px;height:6px;border-radius:50%;background:var(--green);animation:blink 2s infinite}
-    .about-info-card{width:100%;max-width:320px;padding:18px 20px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:12px;display:flex;flex-direction:column;gap:8px}
+    .about-info-card{width:100%;max-width:360px;padding:22px 22px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:14px;display:flex;flex-direction:column;gap:10px}
     .about-info-name{font-size:18px;font-weight:800;color:#fff;letter-spacing:-.01em}
     .about-info-age{font-size:14px;font-weight:500;color:rgba(255,255,255,.45);margin-left:4px}
     .about-info-row{font-size:13.5px;color:rgba(255,255,255,.55);line-height:1.5}
+    .school-row{display:flex;align-items:center;gap:10px}
+    .school-logo{width:34px;height:34px;border-radius:50%;object-fit:contain;background:rgba(255,255,255,.92);padding:3px;box-shadow:0 0 0 1px rgba(255,255,255,.12)}
     .about-info-avail{display:flex;flex-wrap:wrap;gap:6px}
     .info-chip{display:inline-flex;align-items:center;padding:3px 10px;border-radius:5px;font-size:12px;font-weight:500;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.05);color:rgba(255,255,255,.6)}
     .info-chip-em{border-color:rgba(232,69,10,.35);background:rgba(232,69,10,.1);color:#ffb89a;font-weight:600}
@@ -305,6 +317,7 @@
     body.warm .about-info-name{color:#1a1a1a}
     body.warm .about-info-age{color:rgba(0,0,0,.4)}
     body.warm .about-info-row{color:rgba(0,0,0,.5)}
+    body.warm .school-logo{background:#fff;box-shadow:0 0 0 1px rgba(0,0,0,.08)}
     .about-quote{margin-bottom:32px}
     .aq-flow{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
     .aq-node{
@@ -399,6 +412,25 @@
     .cap li{font-size:14px;color:rgba(255,255,255,.6);line-height:1.6;padding-left:18px;position:relative}
     .cap li::before{content:"▸";position:absolute;left:0;color:var(--accent);font-weight:700;font-size:11px;top:3px}
     body.warm .cap li{color:#555}
+
+    .role-proof-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+    .role-proof-card{position:relative;min-height:300px;padding:28px;border:1.5px solid rgba(255,255,255,.12);border-radius:18px;background:rgba(255,255,255,.035);overflow:hidden;transition:transform .28s ease,border-color .22s ease,box-shadow .28s ease}
+    .role-proof-card::before{content:"";position:absolute;inset:0;background:radial-gradient(320px circle at var(--mx,50%) var(--my,30%),rgba(232,69,10,.12),transparent 62%);opacity:0;transition:opacity .25s;pointer-events:none}
+    .role-proof-card:hover{transform:translateY(-6px);border-color:rgba(232,69,10,.38);box-shadow:0 24px 68px rgba(0,0,0,.18)}
+    .role-proof-card:hover::before{opacity:1}
+    .role-proof-card>*{position:relative;z-index:1}
+    .role-proof-num{font-size:12px;font-weight:900;color:var(--accent);letter-spacing:.12em;text-transform:uppercase;margin-bottom:18px}
+    .role-proof-card h3{margin:0 0 12px;color:#fff;font-size:22px;font-weight:900;line-height:1.32}
+    .role-proof-card p{margin:0;color:rgba(255,255,255,.62);font-size:14px;line-height:1.75}
+    .role-proof-match{display:flex;flex-wrap:wrap;gap:6px;margin:18px 0 0}
+    .role-proof-match span{display:inline-flex;padding:4px 9px;border:1px solid rgba(232,69,10,.24);border-radius:999px;background:rgba(232,69,10,.08);color:#ffb493;font-size:11px;font-weight:800}
+    .role-proof-list{display:grid;gap:8px;margin:18px 0 0;padding:0;list-style:none}
+    .role-proof-list li{position:relative;padding-left:16px;color:rgba(255,255,255,.7);font-size:13px;line-height:1.55}
+    .role-proof-list li::before{content:"";position:absolute;left:0;top:9px;width:5px;height:5px;border-radius:50%;background:var(--accent)}
+    body.warm .role-proof-card{background:rgba(255,255,255,.62);border-color:rgba(0,0,0,.08)}
+    body.warm .role-proof-card h3{color:#1a1a1a}
+    body.warm .role-proof-card p,body.warm .role-proof-list li{color:rgba(0,0,0,.6)}
+    body.warm .role-proof-match span{color:#b43d08;background:rgba(232,69,10,.06);border-color:rgba(232,69,10,.18)}
     .skill-tag.hot{color:rgba(232,120,60,.95)!important;border-color:rgba(232,100,40,.3)!important;background:rgba(232,80,10,.08)!important;font-weight:700!important}
     body.warm .skill-tag.hot{color:rgba(180,70,10,.85)!important;border-color:rgba(180,70,10,.25)!important;background:rgba(180,70,10,.06)!important}
 
@@ -414,19 +446,19 @@
     .skills-wrap{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08);border-radius:16px;overflow:visible;margin-top:8px}
     .skill-card{
       padding:32px;background:rgba(10,10,15,.7);position:relative;overflow:hidden;
-      transition:background .3s ease, box-shadow .35s cubic-bezier(.16,1,.3,1), transform .35s cubic-bezier(.16,1,.3,1);
+      transition:background .28s ease, box-shadow .28s ease, transform .28s ease, border-color .22s ease;
       cursor:default; border-radius:0;
     }
     .skills-wrap .skill-card:first-child{border-radius:16px 0 0 0}
     .skills-wrap .skill-card:nth-child(2){border-radius:0 16px 0 0}
     .skills-wrap .skill-card:nth-child(3){border-radius:0 0 0 16px}
     .skills-wrap .skill-card:last-child{border-radius:0 0 16px 0}
-    .skill-card::before{content:"";position:absolute;inset:0;background:radial-gradient(320px circle at var(--mx,50%) var(--my,50%),rgba(232,69,10,.13) 0%,transparent 60%);opacity:0;transition:opacity .4s;pointer-events:none;border-radius:inherit}
+    .skill-card::before{content:"";position:absolute;inset:0;background:radial-gradient(420px circle at var(--mx,50%) var(--my,50%),rgba(232,69,10,.16) 0%,transparent 62%);opacity:0;transition:opacity .28s;pointer-events:none;border-radius:inherit}
     .skill-card:hover::before{opacity:1}
     .skill-card:hover{
-      background:rgba(16,12,18,.95);
-      box-shadow:0 0 0 2px rgba(232,69,10,.35) inset, 0 12px 56px rgba(0,0,0,.6), 0 0 32px rgba(232,69,10,.08);
-      transform:scale(1.06) translateZ(0);
+      background:rgba(232,69,10,.07);
+      box-shadow:0 0 0 1.5px rgba(232,69,10,.32),0 24px 68px rgba(0,0,0,.22),0 0 44px rgba(232,69,10,.12);
+      transform:translateY(-6px) scale(1.02);
       z-index:10;
       position:relative;
     }
@@ -573,13 +605,13 @@
     body.warm .stage-track .proto{background:#f0eae0}
 
     /* project-card / proto / career-card 宽度定义（stage 模式下生效） */
-    .stage-track .project-card{width:300px}
+    .stage-track .project-card{width:520px}
     .stage-track .proto{width:480px}
     .stage-track .career-card{width:560px}
 
     /* 业务项目 & 工作经历的 stage-track 给更多空间 */
-    #stage-biz .stage-track,
-    #stage-career .stage-track{min-height:580px}
+    #stage-career{padding-top:28px;padding-bottom:6px}
+    #stage-career .stage-track{min-height:500px}
 
     /* career 卡宽度大，预览卡需要更大偏移避免遮挡 */
     #stage-career .stage-track .s-prev{ transform:translateX(-480px) scale(0.72) !important }
@@ -593,15 +625,21 @@
     #stage-protos .stage-track .s-far-prev{ transform:translateX(-720px) scale(0.58) !important }
     #stage-protos .stage-track .s-far-next{ transform:translateX(720px) scale(0.58) !important }
 
+    /* 业务项目卡片更接近初版大卡视觉，减少舞台空荡感 */
+    #stage-biz .stage-track .s-prev{ transform:translateX(-450px) scale(0.72) !important }
+    #stage-biz .stage-track .s-next{ transform:translateX(450px) scale(0.72) !important }
+    #stage-biz .stage-track .s-far-prev{ transform:translateX(-780px) scale(0.55) !important }
+    #stage-biz .stage-track .s-far-next{ transform:translateX(780px) scale(0.55) !important }
+
     /* 激活卡按卡片类型单独放大 */
     #stage-protos  .stage-track .s-active{ transform:translateX(0) scale(1.08) !important }
-    #stage-biz     .stage-track .s-active{ transform:translateX(0) scale(1.42) !important }
+    #stage-biz     .stage-track .s-active{ transform:translateX(0) scale(1.08) !important }
     #stage-career  .stage-track .s-active{ transform:translateX(0) scale(1.12) !important }
     #stage-protos  .stage-track .s-active-tap{ transform:translateX(0) scale(1.11) !important }
-    #stage-biz     .stage-track .s-active-tap{ transform:translateX(0) scale(1.46) !important }
+    #stage-biz     .stage-track .s-active-tap{ transform:translateX(0) scale(1.12) !important }
     #stage-career  .stage-track .s-active-tap{ transform:translateX(0) scale(1.16) !important }
 
-    .project-card{position:relative;padding:28px;border:1px solid rgba(255,255,255,.1);border-radius:16px;background:rgba(255,255,255,.04);transition:transform .25s ease,opacity .25s ease,border-color .2s ease,box-shadow .2s ease;cursor:pointer;display:flex;flex-direction:column;will-change:transform,opacity}
+    .project-card{position:relative;padding:36px 40px 34px;border:1px solid rgba(255,255,255,.1);border-radius:16px;background:rgba(255,255,255,.04);transition:transform .25s ease,opacity .25s ease,border-color .2s ease,box-shadow .2s ease;cursor:pointer;display:flex;flex-direction:column;will-change:transform,opacity}
     .project-card::before{content:"";position:absolute;inset:0;border-radius:16px;background:radial-gradient(300px circle at var(--mx,50%) var(--my,50%),rgba(232,69,10,.08) 0%,transparent 60%);opacity:0;transition:opacity .4s;pointer-events:none}
     .project-card:hover::before{opacity:1}
     .project-card-dot{width:8px;height:8px;border-radius:50%;margin-bottom:16px;flex-shrink:0}
@@ -609,12 +647,12 @@
     .stage-track .project-card:nth-child(2) .project-card-dot{background:var(--blue)}
     .stage-track .project-card:nth-child(3) .project-card-dot{background:var(--green)}
     .stage-track .project-card:nth-child(4) .project-card-dot{background:var(--purple)}
-    .project-card h3{margin:0 0 14px;font-size:18px;font-weight:800;color:#e6edf3;line-height:1.3}
-    .project-card-list{list-style:none;padding:0;margin:0 0 20px;display:grid;gap:8px;flex:1}
-    .project-card-list li{font-size:13px;color:rgba(255,255,255,.65);line-height:1.6;padding-left:16px;position:relative}
+    .project-card h3{margin:0 0 16px;font-size:21px;font-weight:800;color:#e6edf3;line-height:1.32}
+    .project-card-list{list-style:none;padding:0;margin:0 0 20px;display:grid;gap:10px;flex:1}
+    .project-card-list li{font-size:14px;color:rgba(255,255,255,.62);line-height:1.68;padding-left:14px;position:relative}
     .project-card-list li::before{content:"";position:absolute;left:0;top:8px;width:4px;height:4px;border-radius:50%;background:rgba(255,255,255,.25)}
-    .project-card-tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:16px}
-    .project-card-tag{font-size:11px;font-weight:600;padding:3px 10px;border-radius:4px;border:1px solid rgba(255,255,255,.1);color:rgba(255,255,255,.5);background:rgba(255,255,255,.03);transition:all .2s}
+    .project-card-tags{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:14px}
+    .project-card-tag{font-size:11px;font-weight:600;padding:4px 9px;border-radius:4px;border:1px solid rgba(255,255,255,.1);color:rgba(255,255,255,.5);background:rgba(255,255,255,.03);transition:all .2s}
     .stage-track .s-active .project-card-tag{border-color:rgba(232,69,10,.2);color:rgba(255,255,255,.7)}
     .project-card-link{display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:600;color:var(--accent);opacity:.7;transition:opacity .2s}
     .stage-track .s-active .project-card-link{opacity:1}
@@ -622,6 +660,16 @@
     .projects-nav{display:flex;justify-content:center;gap:8px;margin-top:20px}
     .projects-nav-dot{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,.15);border:none;cursor:pointer;transition:all .2s;padding:0}
     .projects-nav-dot.active{background:var(--accent);width:24px;border-radius:4px}
+
+    .biz-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;margin-top:8px}
+    .biz-grid .project-card{min-height:315px;width:auto;padding:30px 32px;background:rgba(14,14,26,.86);border-color:rgba(255,255,255,.1);box-shadow:0 18px 46px rgba(0,0,0,.14);transform-origin:center;transition:transform .28s cubic-bezier(.16,1,.3,1),border-color .22s ease,box-shadow .28s ease,background .22s ease}
+    .biz-grid .project-card:hover{transform:translateY(-10px) scale(1.065);z-index:8;border-color:rgba(232,69,10,.72);box-shadow:0 0 0 2px rgba(232,69,10,.32),0 36px 92px rgba(232,69,10,.24),0 18px 60px rgba(0,0,0,.35);background:rgba(18,16,28,.96)}
+    .biz-grid .project-card:nth-child(1) .project-card-dot{background:var(--accent)}
+    .biz-grid .project-card:nth-child(2) .project-card-dot{background:var(--blue)}
+    .biz-grid .project-card:nth-child(3) .project-card-dot{background:var(--green)}
+    .biz-grid .project-card:nth-child(4) .project-card-dot{background:var(--purple)}
+    .biz-grid .project-card-link{margin-top:auto;opacity:1}
+    body.warm .biz-grid .project-card{background:rgba(255,255,255,.72);border-color:rgba(0,0,0,.08);box-shadow:0 12px 34px rgba(0,0,0,.06)}
 
     .proto{position:relative;padding:28px;overflow:hidden;border:1px solid var(--border-dark);border-radius:16px;color:#fff;background:var(--dark-2);transition:transform .25s ease,opacity .25s ease,border-color .2s ease,box-shadow .2s ease;display:flex;flex-direction:column;will-change:transform,opacity;cursor:pointer}
     .proto::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at var(--mouse-x,50%) var(--mouse-y,50%),rgba(232,69,10,.1) 0%,transparent 60%);opacity:0;transition:opacity .4s;pointer-events:none}
@@ -654,7 +702,10 @@
     .contact .title{color:#e6edf3}
     .contact .sub{color:rgba(255,255,255,.65);font-size:15px;margin-top:6px}
     .contact-intro{margin-bottom:44px}
-    .contact-tagline{margin:10px 0 0;font-size:clamp(28px,3.2vw,46px);font-weight:900;letter-spacing:-.03em;color:rgba(255,255,255,.65);line-height:1.1}
+    .contact-tagline{margin:10px 0 0;font-size:clamp(28px,3.2vw,46px);font-weight:900;letter-spacing:-.03em;color:rgba(255,255,255,.65);line-height:1.12}
+    .contact-tagline .line{display:block}
+    .contact-tagline .line-muted{color:rgba(255,255,255,.65)}
+    .contact-tagline .line-strong{color:#fff}
     .contact-tagline span{color:#fff}
     body.warm .contact-tagline{color:rgba(0,0,0,.45)}
     body.warm .contact-tagline span{color:#1a1a1a}
@@ -665,8 +716,12 @@
     .contact-avail{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-bottom:20px}
     .avail-chip{display:inline-flex;align-items:center;padding:5px 12px;border-radius:6px;font-size:13px;font-weight:500;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.05);color:rgba(255,255,255,.7);letter-spacing:.01em}
     .avail-chip-em{border-color:rgba(232,69,10,.4);background:rgba(232,69,10,.12);color:#ffb89a;font-weight:700}
-    .contact-cursor{display:inline-block;color:var(--accent);font-weight:300;animation:blink 1s step-end infinite;margin-left:2px}
+    .contact-cursor{display:none}
     .contact-belief{font-size:15px;color:rgba(255,255,255,.55);line-height:1.8;border-left:2px solid rgba(232,69,10,.3);padding-left:16px;margin-top:0}
+    .contact-proof-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:22px 0 0}
+    .contact-proof{padding:14px 16px;border:1px solid rgba(255,255,255,.09);border-radius:12px;background:rgba(255,255,255,.035)}
+    .contact-proof b{display:block;color:#fff;font-size:13px;line-height:1.35;margin-bottom:4px}
+    .contact-proof span{display:block;color:rgba(255,255,255,.46);font-size:12px;line-height:1.45}
     .contact-rows{display:flex;flex-direction:column;gap:12px}
     .contact-row{display:flex;align-items:center;gap:14px;padding:16px 20px;border:1px solid rgba(255,255,255,.09);border-radius:14px;background:rgba(255,255,255,.03);backdrop-filter:blur(8px);transition:all .25s ease;text-decoration:none;color:#e6edf3}
     .contact-row:hover{border-color:rgba(232,69,10,.4);background:rgba(232,69,10,.06);transform:translateX(4px)}
@@ -680,6 +735,9 @@
     body.warm .contact{background:linear-gradient(180deg,#f0ebe3 0%,#faf6f0 100%);color:#1a1a1a;border-top-color:rgba(0,0,0,.06)}
     body.warm .contact-left-headline{color:#1a1a1a}
     body.warm .contact-belief{color:rgba(0,0,0,.45)}
+    body.warm .contact-proof{border-color:rgba(0,0,0,.08);background:rgba(0,0,0,.025)}
+    body.warm .contact-proof b{color:#1a1a1a}
+    body.warm .contact-proof span{color:rgba(0,0,0,.48)}
     body.warm .contact-row{border-color:rgba(0,0,0,.1);background:rgba(0,0,0,.03);color:#1a1a1a}
     body.warm .contact-row:hover{border-color:rgba(232,69,10,.3);background:rgba(232,69,10,.05)}
     body.warm .contact-row-label{color:rgba(0,0,0,.4)}
@@ -767,6 +825,7 @@
 
     @media(max-width:1280px){
       .caps{grid-template-columns:repeat(2,1fr)}
+      .role-proof-grid{grid-template-columns:1fr}
       .method-flow{flex-wrap:wrap;gap:24px}
     }
     @media(max-width:1100px){
@@ -792,6 +851,8 @@
       .caps{grid-template-columns:1fr}
       .proto{flex:0 0 260px}
       .project-card{flex:0 0 280px}
+      .biz-grid{grid-template-columns:1fr}
+      .biz-grid .project-card{min-height:auto;padding:26px 24px}
       .project{padding:24px}
       .contact-layout{grid-template-columns:1fr;gap:28px}
       .stat-strip{grid-template-columns:repeat(2,1fr)}
@@ -1003,6 +1064,26 @@
     .proto:hover .proto-cover img{transform:scale(1.04)}
     .proto-tech{display:flex;flex-wrap:wrap;gap:5px;margin:10px 0 0}
     .proto-tech-tag{font-size:10.5px;font-weight:600;padding:2px 8px;border-radius:4px;border:1px solid rgba(255,255,255,.1);color:rgba(255,255,255,.42);background:rgba(255,255,255,.03);letter-spacing:.02em}
+    /* === Flagship AI Works === */
+    .flagship-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin:0 0 42px}
+    .flagship-card{position:relative;min-height:360px;padding:30px;border:1px solid rgba(255,255,255,.12);border-radius:18px;background:linear-gradient(135deg,rgba(255,255,255,.075),rgba(255,255,255,.025));overflow:hidden;box-shadow:0 24px 68px rgba(0,0,0,.18);display:flex;flex-direction:column;justify-content:space-between;gap:24px}
+    .flagship-card::before{content:"";position:absolute;inset:-1px;background:radial-gradient(420px circle at 80% 5%,rgba(232,69,10,.24),transparent 58%),radial-gradient(320px circle at 0% 90%,rgba(59,130,246,.16),transparent 60%);opacity:.85;pointer-events:none}
+    .flagship-card:nth-child(2)::before{background:radial-gradient(420px circle at 80% 5%,rgba(74,222,128,.18),transparent 58%),radial-gradient(320px circle at 0% 90%,rgba(232,69,10,.18),transparent 60%)}
+    .flagship-card>*{position:relative;z-index:1}
+    .flagship-label{display:inline-flex;margin-bottom:16px;padding:5px 10px;border:1px solid rgba(255,255,255,.14);border-radius:999px;color:rgba(255,255,255,.55);font-size:11px;font-weight:900;letter-spacing:.08em;text-transform:uppercase;background:rgba(0,0,0,.12)}
+    .flagship-card h3{margin:0 0 12px;color:#fff;font-size:28px;font-weight:900;letter-spacing:-.02em;line-height:1.22}
+    .flagship-card p{margin:0;color:rgba(255,255,255,.68);font-size:14.5px;line-height:1.8}
+    .flagship-points{display:grid;gap:8px;margin:18px 0 0;padding:0;list-style:none}
+    .flagship-points li{color:rgba(255,255,255,.72);font-size:13px;line-height:1.6;padding-left:16px;position:relative}
+    .flagship-points li::before{content:"→";position:absolute;left:0;color:var(--accent);font-weight:900}
+    .flagship-actions{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+    .flagship-meta{display:inline-flex;padding:5px 10px;border-radius:999px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);color:rgba(255,255,255,.48);font-size:11px;font-weight:800}
+    .flagship-card:hover{border-color:rgba(232,69,10,.45);box-shadow:0 30px 84px rgba(232,69,10,.14),0 24px 68px rgba(0,0,0,.22);transform:translateY(-3px)}
+    body.warm .flagship-card{background:rgba(255,255,255,.65);border-color:rgba(0,0,0,.08)}
+    body.warm .flagship-card h3{color:#1a1a1a}
+    body.warm .flagship-card p,body.warm .flagship-points li{color:rgba(0,0,0,.62)}
+    body.warm .flagship-label,body.warm .flagship-meta{border-color:rgba(0,0,0,.1);background:rgba(0,0,0,.035);color:rgba(0,0,0,.45)}
+    @media(max-width:760px){.flagship-grid{grid-template-columns:1fr}.flagship-card{min-height:auto}}
     /* === Proto Summary Bar === */
 
     .proto-summary-bar b{color:#fff;font-weight:700}
@@ -1100,14 +1181,13 @@
   <div class="scroll-progress" id="scrollProgress"></div>
 
   <header class="nav">
-    <a class="brand" href="#top"><b>张彪</b><span>AI 产品运营 · 创作者增长</span></a>
+    <a class="brand" href="#top"><b>张彪</b><span>内容增长与 AI 运营实践</span></a>
     <nav class="nav-links">
       <a href="#about" data-sec="about" data-zh="关于我" data-en="About"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>关于我</a>
       <a href="#works" data-sec="works" data-zh="AI 工具" data-en="Tools"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>AI 工具</a>
       <a href="#career-section" data-sec="career-section" data-zh="工作经历" data-en="Career"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><line x1="12" y1="12" x2="12" y2="16"/><line x1="10" y1="14" x2="14" y2="14"/></svg>工作经历</a>
       <a href="#insights" data-sec="insights" data-zh="思考" data-en="Insights"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a7 7 0 0 1 7 7c0 3-1.8 5.4-4.5 6.5V17a1 1 0 0 1-1 1h-3a1 1 0 0 1-1-1v-1.5C6.8 14.4 5 12 5 9a7 7 0 0 1 7-7z"/><line x1="9" y1="21" x2="15" y2="21"/></svg>思考</a>
       <a href="#contact" data-sec="contact" data-zh="联系" data-en="Contact"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>联系</a>
-    </nav>
     </nav>
     <div class="nav-controls">
       <button class="nav-btn" id="langToggle" title="中/EN">文</button>
@@ -1130,13 +1210,13 @@
       <div class="hero-glow" id="heroGlow"></div>
       <div class="wrap hero-grid">
         <div>
-          <span class="hero-tag"><span class="status-dot"></span>张彪 | 运营出身 · 产品思维</span>
-          <h1><span class="h1-line1">creator ops · ai product · 4 years</span><span class="h1-line2">做了 4 年创作者运营<br><span class="highlight-text">现在想把经验<br>变成产品</span></span></h1>
-          <p class="lead">在高途深耕近 4 年，从孵化 IP、搭建矩阵，到设计分层机制——每一步都在试图把"有效的经验"变成可复制的东西。现在更进一步：把验证过的业务 SOP 做成 5 个 AI 原型，找到 AI 在创作者工作流里真正有价值的介入点。</p>
+          <span class="hero-tag"><span class="status-dot"></span>张彪 | 内容增长 · 创作者协作 · AI 工具实践</span>
+          <h1><span class="h1-line1">content growth · creator ecosystem · ai ops</span><span class="h1-line2">从内容增长结果<br><span class="highlight-text">到创作者机制<br>再到 AI 工具化</span></span></h1>
+          <p class="lead">近 4 年教培行业内容增长与创作者运营经验，做过账号矩阵、内容供给、自然流获客和 AI 提效。我更擅长把跑通过的运营方法沉淀成机制，再做成可复用的工具。</p>
           <div class="hero-ctas">
-            <a class="btn-primary" href="#works">查看 AI 工具 →</a>
+            <a class="btn-primary" href="#works">查看 AI 作品 →</a>
             <a class="btn-secondary" href="#career-section">查看工作经历 →</a>
-            <a class="btn-secondary" href="#contact">联系我</a>
+            <a class="btn-secondary" href="#contact">联系方式</a>
           </div>
         </div>
         <aside class="hero-card">
@@ -1144,20 +1224,23 @@
             <div class="mac-dot red"></div>
             <div class="mac-dot yellow"></div>
             <div class="mac-dot green"></div>
-            <span>Creator AI Pipeline</span>
+            <span>AI Ops Portfolio</span>
           </div>
           <div class="card-body">
-            <small>Creator AI Product Pipeline</small>
+            <small>Operating Capability Chain</small>
             <div class="chain-flow">
-              <div class="chain-step"><div class="chain-icon i1">💡</div><div class="chain-info"><b>选题</b><span>灵感加油站 — AI 生成爆款标题</span></div></div>
+              <div class="chain-step"><div class="chain-icon i1">💡</div><div class="chain-info"><b>内容判断</b><span>平台语感、用户需求、选题机会</span></div></div>
               <div class="chain-arrow">↓</div>
-              <div class="chain-step"><div class="chain-icon i2">✍️</div><div class="chain-info"><b>创作</b><span>Safety Copilot — 合规前置审查</span></div></div>
+              <div class="chain-step"><div class="chain-icon i2">✍️</div><div class="chain-info"><b>供给组织</b><span>账号矩阵、UGC 供给、创作者协作</span></div></div>
               <div class="chain-arrow">↓</div>
-              <div class="chain-step"><div class="chain-icon i3">🛡️</div><div class="chain-info"><b>发布</b><span>Postmortem AI — 归因诊断</span></div></div>
+              <div class="chain-step"><div class="chain-icon i3">📊</div><div class="chain-info"><b>增长转化</b><span>自然流获客、线索承接、数据复盘</span></div></div>
               <div class="chain-arrow">↓</div>
-              <div class="chain-step"><div class="chain-icon i4">📊</div><div class="chain-info"><b>复盘</b><span>Postmortem AI — 归因诊断</span></div></div>
-              <div class="chain-arrow">↓</div>
-              <div class="chain-step"><div class="chain-icon i5">🚀</div><div class="chain-info"><b>成长</b><span>CreatorInsight — 增长决策助手</span></div></div>
+              <div class="chain-step"><div class="chain-icon i5">🚀</div><div class="chain-info"><b>AI 工具化</b><span>把高频运营动作做成可体验工具</span></div></div>
+            </div>
+            <div class="hero-proof-grid">
+              <div class="hero-proof"><b>5100W+</b><span>单项目播放</span></div>
+              <div class="hero-proof"><b>100+</b><span>创作者协作</span></div>
+              <div class="hero-proof"><b>8 个</b><span>公开 AI 工具</span></div>
             </div>
           </div>
         </aside>
@@ -1167,18 +1250,18 @@
     <!-- Hero 正下方：跑马灯 + 数据带，第一屏即可见 -->
     <div class="marquee marquee-accent">
       <div class="marquee-inner">
-        <span>创作者全链路 ✦</span><span>AI 产品机制 ✦</span><span>数据驱动迭代 ✦</span><span>经验产品化 ✦</span><span>内容安全合规 ✦</span><span>50+ 账号矩阵 ✦</span><span>100+ 主播孵化 ✦</span><span>5 个 AI 原型 ✦</span>
-        <span>创作者全链路 ✦</span><span>AI 产品机制 ✦</span><span>数据驱动迭代 ✦</span><span>经验产品化 ✦</span><span>内容安全合规 ✦</span><span>50+ 账号矩阵 ✦</span><span>100+ 主播孵化 ✦</span><span>5 个 AI 原型 ✦</span>
+        <span>内容增长作品集 ✦</span><span>AI 运营工具实践 ✦</span><span>创作者协作 ✦</span><span>账号矩阵 ✦</span><span>自然流获客 ✦</span><span>50+ 账号矩阵 ✦</span><span>100+ 创作者协作 ✦</span><span>8 个公开 AI 工具入口 ✦</span>
+        <span>内容增长作品集 ✦</span><span>AI 运营工具实践 ✦</span><span>创作者协作 ✦</span><span>账号矩阵 ✦</span><span>自然流获客 ✦</span><span>50+ 账号矩阵 ✦</span><span>100+ 创作者协作 ✦</span><span>8 个公开 AI 工具入口 ✦</span>
       </div>
     </div>
 
     <div class="stat-strip">
       <div class="stat-cell"><div class="stat-num" data-count="4" data-prefix="近" data-suffix="年">近<em>4</em>年</div><div class="stat-lbl">高途单公司深耕</div></div>
       <div class="stat-cell"><div class="stat-num" data-count="50" data-suffix="+"><em>50</em>+</div><div class="stat-lbl">从 0 搭建账号矩阵</div></div>
-      <div class="stat-cell"><div class="stat-num" data-count="100" data-suffix="+"><em>100</em>+</div><div class="stat-lbl">主播孵化（成功率 100%）</div></div>
-      <div class="stat-cell"><div class="stat-num" data-count="300" data-suffix="W"><em>300</em>W</div><div class="stat-lbl">创作者矩阵年度 GMV</div></div>
-      <div class="stat-cell"><div class="stat-num" data-count="300" data-suffix="%"><em>300</em>%</div><div class="stat-lbl">AI 赋能后线索效率</div></div>
-      <div class="stat-cell"><div class="stat-num" data-count="5" data-suffix="个"><em>5</em>个</div><div class="stat-lbl">已上线可运行原型</div></div>
+      <div class="stat-cell"><div class="stat-num" data-count="5100" data-suffix="W+"><em>5100</em>W+</div><div class="stat-lbl">单项目矩阵总播放量</div></div>
+      <div class="stat-cell"><div class="stat-num" data-count="4000" data-suffix="+"><em>4000</em>+</div><div class="stat-lbl">自然流获客线索</div></div>
+      <div class="stat-cell"><div class="stat-num" data-count="100" data-suffix="+"><em>100</em>+</div><div class="stat-lbl">创作者协作经验</div></div>
+      <div class="stat-cell"><div class="stat-num" data-count="8" data-suffix="个"><em>8</em>个</div><div class="stat-lbl">公开 AI 工具入口</div></div>
     </div>
 
     <!-- ② 关于我 + 技能工具栈（前置到第二屏） -->
@@ -1187,7 +1270,7 @@
         <div class="head reveal">
           <span class="kicker">About</span>
           <h2 class="title">关于我</h2>
-          <p class="sub">新闻学出身，4 年创作者运营，从内容执行到机制设计，再到用 AI 把经验产品化。</p>
+          <p class="sub">新闻学背景让我更重视内容判断。近 4 年教培行业内容增长与创作者运营经历，让我理解内容如何变成稳定供给、自然流量和转化结果。</p>
         </div>
         <div class="about-grid">
           <div class="about-left reveal-left">
@@ -1195,9 +1278,9 @@
               <img class="about-photo" src="assets/profile.jpg" alt="张彪形象照">
             </div>
             <div class="about-info-card">
-              <div class="about-info-name">张彪 <span class="about-info-age">25 岁</span></div>
-              <div class="about-info-row">🎓 北京语言大学 · 新闻学</div>
-              <div class="about-info-row about-info-avail"><span class="info-chip info-chip-em">📍 北京</span><span class="info-chip info-chip-em">一周内到岗</span><span class="info-chip info-chip-em">欢迎约面试</span></div>
+              <div class="about-info-name">张彪 <span class="about-info-age">26 岁</span></div>
+              <div class="about-info-row school-row"><img class="school-logo" src="assets/blcu-logo.png" alt="北京语言大学校徽"><span>北京语言大学 · 新闻学</span></div>
+              <div class="about-info-row about-info-avail"><span class="info-chip info-chip-em">📍 北京</span><span class="info-chip info-chip-em">内容增长</span><span class="info-chip info-chip-em">AI 工具实践</span></div>
             </div>
           </div>
           <div class="reveal-right">
@@ -1214,15 +1297,15 @@
                 </div>
                 <div class="aq-arrow">→</div>
                 <div class="aq-node aq-node-highlight" id="aqNode2">
-                  <div class="aq-label">AI 产品运营</div>
-                  <div class="aq-sub">SOP 产品化 · 效率验证</div>
+                  <div class="aq-label">AI 工具实践者</div>
+                  <div class="aq-sub">SOP 工具化 · 效率验证</div>
                 </div>
               </div>
             </div>
             <p class="about-body">
-              新闻学出身，2022 年入行做创作者运营，在高途深耕近 4 年。<br>
-              <strong>喜欢从业务里找问题，然后把解法做成机制、再把机制变成工具——这是我一直在走的路。</strong><br><br>
-              现在更关注的是：AI 在创作者工作流里，哪些节点的介入是真正有效的，而不只是看起来很酷。
+              过去近 4 年，我主要在教培内容业务中做内容增长和创作者运营，参与过账号冷启动、矩阵放大、素人种草、创作者协作、线索承接和转化复盘。<br><br>
+              <strong>我更关注的不是单次爆款，而是把选题判断、供给组织、承接路径和复盘标准，沉淀成可以被复制的方法。</strong><br><br>
+              AI 工具对我来说，是这套方法的延伸：把真实业务里的高频动作工具化，让选题、审核、社群、复盘这些经验可以被打开、被验证、被复用。
             </p>
             <div class="about-skills-grid">
               <div class="about-skill-block">
@@ -1241,13 +1324,6 @@
                 <div class="about-skill-desc">用可交互原型验证 AI 介入假设，以采纳率和行为改变判断节点是否真的有效</div>
               </div>
             </div>
-            <div class="about-tags">
-              <span class="about-tag">创作者运营</span>
-              <span class="about-tag">AI 产品设计</span>
-              <span class="about-tag">数据驱动</span>
-              <span class="about-tag">Claude API</span>
-              <span class="about-tag">Prompt Engineering</span>
-            </div>
           </div>
         </div>
 
@@ -1259,25 +1335,25 @@
           <div class="skill-card">
             <h4><span>🎯</span> 运营技能</h4>
             <div class="skill-tags">
-              <span class="skill-tag hot">创作者运营</span><span class="skill-tag">IP 孵化</span><span class="skill-tag">矩阵搭建</span><span class="skill-tag hot">SOP 设计</span><span class="skill-tag">内容策划</span><span class="skill-tag">数据分析</span>
+              <span class="skill-tag hot">内容增长</span><span class="skill-tag">UGC 供给</span><span class="skill-tag">矩阵搭建</span><span class="skill-tag hot">SOP 设计</span><span class="skill-tag">创作者协作</span><span class="skill-tag">数据复盘</span>
             </div>
           </div>
           <div class="skill-card">
             <h4><span>🤖</span> AI 工具</h4>
             <div class="skill-tags">
-              <span class="skill-tag hot">Claude Code</span><span class="skill-tag">Cursor</span><span class="skill-tag hot">Prompt Engineering</span><span class="skill-tag">DeepSeek</span><span class="skill-tag">GPT-4o</span><span class="skill-tag">Midjourney</span>
+              <span class="skill-tag hot">Codex</span><span class="skill-tag hot">Claude Code</span><span class="skill-tag">Cursor</span><span class="skill-tag">Vercel</span><span class="skill-tag">GitHub Pages</span><span class="skill-tag">Prompt Workflow</span>
             </div>
           </div>
           <div class="skill-card">
             <h4><span>📐</span> 产品 & 设计</h4>
             <div class="skill-tags">
-              <span class="skill-tag hot">交互原型</span><span class="skill-tag">需求分析</span><span class="skill-tag hot">指标体系</span><span class="skill-tag">用户调研</span><span class="skill-tag">A/B 测试</span>
+              <span class="skill-tag hot">AI 工作流</span><span class="skill-tag">需求拆解</span><span class="skill-tag hot">指标体系</span><span class="skill-tag">用户反馈</span><span class="skill-tag">A/B 测试</span>
             </div>
           </div>
           <div class="skill-card">
             <h4><span>📊</span> 数据 & 平台</h4>
             <div class="skill-tags">
-              <span class="skill-tag hot">抖音创作者平台</span><span class="skill-tag">小红书</span><span class="skill-tag hot">数据看板搭建</span><span class="skill-tag">飞书多维表格</span><span class="skill-tag">HTML/CSS/JS</span>
+              <span class="skill-tag hot">抖音 / 小红书</span><span class="skill-tag">短视频平台</span><span class="skill-tag hot">数据看板搭建</span><span class="skill-tag">飞书多维表格</span><span class="skill-tag">HTML/CSS/JS</span>
             </div>
           </div>
         </div>
@@ -1288,30 +1364,64 @@
     <section class="section dark" id="works">
       <div class="wrap">
         <div class="head head-full reveal">
-          <span class="kicker">Vibe Coding Projects</span>
-          <h2 class="title"><span class="works-title-line1">Vibe Coding × 业务经验</span><span class="works-title-line2">5 个上线可用的 AI 工具</span></h2>
-          <p class="sub">用 Claude Code 从 0 写到上线，验证 AI 在创作者工作流里哪些节点真正有效。</p>
+          <span class="kicker">AI Works</span>
+          <h2 class="title"><span class="works-title-line1">AI 工具作品</span><span class="works-title-line2">从真实业务问题到可体验工具</span></h2>
+          <p class="sub">这些工具不是孤立展示，而是从真实运营动作里拆出来的：选题、审核、社群、复盘、增长计划。先发现高频问题，再沉淀 SOP，最后做成可体验的 AI 工作流。</p>
+        </div>
+        <div class="flagship-grid reveal">
+          <article class="flagship-card">
+            <div>
+              <span class="flagship-label">Flagship 01 · Community Ops Assistant</span>
+              <h3>创作者社群助手</h3>
+              <p>一个面向创作者社群的 AI 助手，把日常答疑、选题启发、激励文案和反馈分析做成可复用的运营组件。</p>
+              <ul class="flagship-points">
+                <li>把高频社群动作沉淀为工具能力</li>
+                <li>覆盖答疑、激励、反馈、内容启发</li>
+                <li>适合作为运营提效场景的主作品</li>
+              </ul>
+            </div>
+            <div class="flagship-actions">
+              <a class="proto-link-btn live" href="https://tools.013689.xyz" target="_blank" rel="noreferrer">在线体验</a>
+              <span class="flagship-meta">社群运营</span><span class="flagship-meta">UGC 供给</span><span class="flagship-meta">智能答疑</span>
+            </div>
+          </article>
+          <article class="flagship-card">
+            <div>
+              <span class="flagship-label">Flagship 02 · Content Supply Workspace</span>
+              <h3>AI 短剧创作者运营平台</h3>
+              <p>一个面向内容团队的运营工作台，把创作者协作、内容供给、选题规划和复盘建议集中到同一个可体验工具里。</p>
+              <ul class="flagship-points">
+                <li>完整工作台：从内容供给到复盘建议</li>
+                <li>体现创作者协作、内容策略和 AI 辅助判断</li>
+                <li>可直接打开体验，不只是静态展示</li>
+              </ul>
+            </div>
+            <div class="flagship-actions">
+              <a class="proto-link-btn live" href="https://assistant.013689.xyz" target="_blank" rel="noreferrer">在线体验</a>
+              <span class="flagship-meta">短剧内容</span><span class="flagship-meta">创作者运营</span><span class="flagship-meta">AI 工作台</span>
+            </div>
+          </article>
         </div>
         <!-- AI 原型工具 -->
         <div class="proj-tab-panel active" id="tab-protos">
           <div class="proto-summary-bar reveal">
-            <span class="proto-summary-item"><b>5 个工具</b>全部上线</span>
+            <span class="proto-summary-item"><b>工具链</b>覆盖内容工作流</span>
             <span class="proto-summary-sep">·</span>
             <span class="proto-summary-item">可直接体验</span>
             <span class="proto-summary-sep">·</span>
-            <span class="proto-summary-item"><b>Claude Code</b> 独立开发</span>
+            <span class="proto-summary-item"><b>Claude Code</b> 辅助开发</span>
             <span class="proto-summary-sep">·</span>
             <span class="proto-summary-item">从 0 到部署</span>
             <span class="proto-summary-sep">·</span>
-            <span class="proto-summary-item">源码开源 <b>GitHub</b></span>
+            <span class="proto-summary-item"><a href="https://rango-bot441.github.io/douyin-creator-growth-ai-toolchain/launcher.html" target="_blank" rel="noreferrer">完整合集 <b>Launcher</b></a></span>
           </div>
           <div class="stage-wrap" id="stage-protos">
             <div class="stage-track">
               <div class="proto proto-card" data-idx="0">
                 <div class="proto-cover"><img src="assets/creator-inspiration-station-cover.png" alt="创作者灵感加油站封面"></div>
-                <h3><a href="https://rango-bot441.github.io/douyin-creator-growth-ai-toolchain/inspiration-station/" target="_blank" onclick="event.stopPropagation()">创作者灵感加油站</a></h3>
+                <h3><a href="https://rango-bot441.github.io/douyin-creator-growth-ai-toolchain/inspiration-station/" target="_blank" onclick="event.stopPropagation()">AI 内容选题助手</a></h3>
                 <ul class="proto-meta"><li><span class="proto-badge b-blue">① 选题 → 标题</span></li></ul>
-                <p class="proto-desc">创作者最大的时间黑洞是选题——想了半天不知道做什么。这个工具输入垂类方向，AI 批量输出多角度标题，还能记录哪些标题被采纳，帮你越用越准。</p>
+                <p class="proto-desc">输入垂类、受众和账号阶段，批量生成内容方向与标题，把“临时想选题”变成可复用的选题流程。</p>
                 <div class="proto-tech"><span class="proto-tech-tag">HTML/CSS/JS</span><span class="proto-tech-tag">Node.js</span><span class="proto-tech-tag">Render</span><span class="proto-tech-tag">OpenAI API</span></div>
                 <div class="proto-links">
                   <a class="proto-link-btn" href="https://github.com/Rango-bot441/inspiration-station" target="_blank" onclick="event.stopPropagation()">⌥ GitHub</a>
@@ -1320,9 +1430,9 @@
               </div>
               <div class="proto proto-card" data-idx="1">
                 <div class="proto-cover"><img src="assets/cover-content-safety-copilot.png" alt="内容安全审核助手封面"></div>
-                <h3><a href="https://rango-bot441.github.io/douyin-creator-growth-ai-toolchain/content-safety-copilot/" target="_blank" onclick="event.stopPropagation()">内容安全审核助手</a></h3>
+                <h3><a href="https://rango-bot441.github.io/douyin-creator-growth-ai-toolchain/content-safety-copilot/" target="_blank" onclick="event.stopPropagation()">AI 内容审核助手</a></h3>
                 <ul class="proto-meta"><li><span class="proto-badge b-purple">② 创作 → 合规</span></li></ul>
-                <p class="proto-desc">脚本写完发出去才发现有违禁词，不仅内容被删，账号也受影响。这个工具在发布前扫描脚本，把有风险的表达标出来并给替换建议，把合规关口从事后移到事前。</p>
+                <p class="proto-desc">把内容审核前置到发布前，扫描脚本风险表达并给出替换建议，让内容生产兼顾效率和安全边界。</p>
                 <div class="proto-tech"><span class="proto-tech-tag">HTML/CSS/JS</span><span class="proto-tech-tag">Node.js</span><span class="proto-tech-tag">Python</span><span class="proto-tech-tag">Render</span></div>
                 <div class="proto-links">
                   <a class="proto-link-btn" href="https://github.com/Rango-bot441/content-safety-copilot" target="_blank" onclick="event.stopPropagation()">⌥ GitHub</a>
@@ -1331,9 +1441,9 @@
               </div>
               <div class="proto proto-card" data-idx="2">
                 <div class="proto-cover"><img src="assets/creator-postmortem-ai-cover.png" alt="AI复盘诊断台封面"></div>
-                <h3><a href="https://rango-bot441.github.io/douyin-creator-growth-ai-toolchain/creator-postmortem-ai/" target="_blank" onclick="event.stopPropagation()">AI 复盘诊断台</a></h3>
+                <h3><a href="https://rango-bot441.github.io/douyin-creator-growth-ai-toolchain/creator-postmortem-ai/" target="_blank" onclick="event.stopPropagation()">AI 内容复盘诊断台</a></h3>
                 <ul class="proto-meta"><li><span class="proto-badge b-blue">③ 发布 → 复盘</span></li></ul>
-                <p class="proto-desc">一条视频数据不好，到底是开头没留住人、内容节奏有问题，还是话题本身没流量？把脚本和数据贴进来，AI 给你拆清楚原因，告诉你下一条怎么改。</p>
+                <p class="proto-desc">把脚本、标题和数据表现放在一起诊断，判断内容没跑出来的原因，把“经验复盘”转成可复用的分析流程。</p>
                 <div class="proto-tech"><span class="proto-tech-tag">HTML/CSS/JS</span><span class="proto-tech-tag">Node.js</span><span class="proto-tech-tag">Render</span><span class="proto-tech-tag">GitHub</span></div>
                 <div class="proto-links">
                   <a class="proto-link-btn" href="https://github.com/Rango-bot441/creator-postmortem-ai" target="_blank" onclick="event.stopPropagation()">⌥ GitHub</a>
@@ -1342,9 +1452,9 @@
               </div>
               <div class="proto proto-card" data-idx="3">
                 <div class="proto-cover"><img src="assets/creatorinsight-cover.png" alt="创作者复盘增长助手封面"></div>
-                <h3><a href="https://rango-bot441.github.io/douyin-creator-growth-ai-toolchain/creatorinsight-ai/" target="_blank" onclick="event.stopPropagation()">创作者复盘增长助手</a></h3>
+                <h3><a href="https://rango-bot441.github.io/douyin-creator-growth-ai-toolchain/creatorinsight-ai/" target="_blank" onclick="event.stopPropagation()">AI 增长计划助手</a></h3>
                 <ul class="proto-meta"><li><span class="proto-badge b-green">④ 复盘 → 增长</span></li></ul>
-                <p class="proto-desc">把最近几条视频的数据丢进来，AI 帮你找出共同问题，给出具体的改进方向，还会生成接下来 7 天的内容计划——把本来要花一下午的复盘，压缩到 5 分钟。</p>
+                <p class="proto-desc">读取近期内容数据，找出共同问题，给出优先级和 7 天内容计划，把复盘结果转成下一步行动。</p>
                 <div class="proto-tech"><span class="proto-tech-tag">HTML/CSS/JS</span><span class="proto-tech-tag">Node.js</span><span class="proto-tech-tag">OpenAI API</span><span class="proto-tech-tag">Render</span></div>
                 <div class="proto-links">
                   <a class="proto-link-btn" href="https://github.com/Rango-bot441/creatorinsight-ai" target="_blank" onclick="event.stopPropagation()">⌥ GitHub</a>
@@ -1353,9 +1463,9 @@
               </div>
               <div class="proto proto-card" data-idx="4">
                 <div class="proto-cover"><img src="assets/cover-prd-copilot.png" alt="PRD Copilot封面"></div>
-                <h3><a href="https://rango-bot441.github.io/douyin-creator-growth-ai-toolchain/prd-copilot/" target="_blank" onclick="event.stopPropagation()">PRD Copilot</a></h3>
+                <h3><a href="https://rango-bot441.github.io/douyin-creator-growth-ai-toolchain/prd-copilot/" target="_blank" onclick="event.stopPropagation()">产品化表达助手</a></h3>
                 <ul class="proto-meta"><li><span class="proto-badge b-yellow">⑤ 需求 → PRD</span></li></ul>
-                <p class="proto-desc">产品想法有了，但写成 PRD 很费时间。把需求描述输入进来，AI 帮你拆出用户故事、功能边界和验收标准，快速生成一份可以直接给开发对齐的文档。</p>
+                <p class="proto-desc">把模糊运营问题转成用户故事、功能边界和验收标准，用来提升跨团队沟通和需求表达效率。</p>
                 <div class="proto-tech"><span class="proto-tech-tag">HTML/CSS/JS</span><span class="proto-tech-tag">Node.js</span><span class="proto-tech-tag">GitHub</span><span class="proto-tech-tag">Render</span></div>
                 <div class="proto-links">
                   <a class="proto-link-btn" href="https://github.com/Rango-bot441/prd-copilot" target="_blank" onclick="event.stopPropagation()">⌥ GitHub</a>
@@ -1380,7 +1490,7 @@
         <div class="head reveal">
           <span class="kicker">Career & Projects</span>
           <h2 class="title">工作经历 & 业务项目</h2>
-          <p class="sub">4 年高途深耕，从内容执行到机制设计——这是 AI 原型背后的真实业务支撑。</p>
+          <p class="sub">这一部分把时间线和项目结果放在一起：工作经历用于快速理解业务背景，业务项目用于展开具体动作、数据结果和方法沉淀。</p>
         </div>
 
         <!-- 工作经历 卡片轮播 -->
@@ -1393,45 +1503,45 @@
             <div class="exp-logo"><span style="color:#fff;font-size:18px;font-weight:900;letter-spacing:-.02em;font-family:'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif">高途</span></div>
             <div class="exp-header-info">
               <h3 style="margin:0;font-size:20px;font-weight:800">高途集团 Gaotu</h3>
-              <span style="font-size:14px">2022.07 – 2026.04 · 近 4 年 ｜ 创作者运营 → AI 产品运营</span>
+              <span style="font-size:14px">2022.07 – 2026.04 · 近 4 年 ｜ 内容运营 / 创作者协作 / AI 工具实践</span>
             </div>
           </div>
           <div class="stage-wrap" id="stage-career">
             <div class="stage-track">
               <div class="career-card" data-idx="0">
-                <div class="career-card-head"><span class="career-year-badge">2023</span><span class="career-role">创作者内容运营</span></div>
-                <h4>验证「内容→私域→转化」可复现路径</h4>
-                <p>孵化北大学姐 IP，小红书引流→私域完整闭环，验证教育垂类素人 IP 冷启动可行性。</p>
+                <div class="career-card-head"><span class="career-year-badge">2023</span><span class="career-role">内容获客链路验证</span></div>
+                <h4>从内容冷启动，跑通「内容 → 承接 → 转化」</h4>
+                <p>以教育垂类账号为切入口，验证选题、人设、引流话术和私域承接的完整链路。这个阶段让我从内容发布走向内容获客和转化复盘。</p>
                 <div class="career-kpis">
                   <div class="career-kpi-tag"><b>20W+</b><span>全平台涨粉</span></div>
                   <div class="career-kpi-tag"><b>闭环</b><span>引流→转化</span></div>
-                  <div class="career-kpi-tag"><b>SOP</b><span>冷启动路径</span></div>
+                  <div class="career-kpi-tag"><b>自然流</b><span>获客验证</span></div>
                 </div>
               </div>
               <div class="career-card" data-idx="1">
-                <div class="career-card-head"><span class="career-year-badge">2024</span><span class="career-role">创作者增长运营</span></div>
-                <h4>设计创作者分层赋能体系，推动矩阵规模化</h4>
-                <p>按创作者阶段和风格设计差异化赋能策略，跑通跨场域直播；对接产品、设计、电商多团队，期维度复盘线索质量与转化效率，单月 GMV 峰值 26W+。</p>
+                <div class="career-card-head"><span class="career-year-badge">2024</span><span class="career-role">账号矩阵与创作者分层</span></div>
+                <h4>把单账号经验复制成矩阵，提升内容供给稳定性</h4>
+                <p>按账号阶段、内容风格和转化目标制定差异化策略，协同产品、设计、电商和销售团队，持续复盘线索质量与转化效率。</p>
                 <div class="career-kpis">
                   <div class="career-kpi-tag"><b>26W+</b><span>单月 GMV</span></div>
                   <div class="career-kpi-tag"><b>50+</b><span>账号矩阵</span></div>
-                  <div class="career-kpi-tag"><b>100%</b><span>起号成功率</span></div>
+                  <div class="career-kpi-tag"><b>分层</b><span>运营策略</span></div>
                 </div>
               </div>
               <div class="career-card" data-idx="2">
-                <div class="career-card-head"><span class="career-year-badge">2025</span><span class="career-role">创作者产品运营</span></div>
-                <h4>主导主播全生命周期孵化机制</h4>
-                <p>建立从招募到成长的标准化孵化流程，将起号周期从 14 天压缩至 4 天；定期与销售团队复盘线索质量，规模化运营 50+ 账号，全年 GMV 300W。</p>
+                <div class="career-card-head"><span class="career-year-badge">2025</span><span class="career-role">创作者生态运营</span></div>
+                <h4>把创作者供给从“人盯人”改成标准化成长机制</h4>
+                <p>建立从招募、培训、试播、内容反馈到成长复盘的流程，把个体经验沉淀为 checklist 和阶段标准，帮助内容供给更稳定、质量更可控。</p>
                 <div class="career-kpis">
                   <div class="career-kpi-tag"><b>4 天</b><span>起号周期</span></div>
-                  <div class="career-kpi-tag"><b>100+</b><span>主播孵化人次</span></div>
-                  <div class="career-kpi-tag"><b>300W</b><span>全年 GMV</span></div>
+                  <div class="career-kpi-tag"><b>100+</b><span>创作者协作</span></div>
+                  <div class="career-kpi-tag"><b>机制</b><span>供给稳定</span></div>
                 </div>
               </div>
               <div class="career-card" data-idx="3">
-                <div class="career-card-head"><span class="career-year-badge">2026</span><span class="career-role">AI 产品运营</span></div>
-                <h4>设计 AI 内容生产链路，将业务 SOP 产品化</h4>
-                <p>日更产能 3 倍提升，获客线索 4000+。同期通过 Vibe Coding 自主搭建多个 AI 工具，将业务中验证有效的 SOP 产品化，大幅提升团队工作效率。</p>
+                <div class="career-card-head"><span class="career-year-badge">2026</span><span class="career-role">AI 工具实践</span></div>
+                <h4>把内容增长 SOP 整理成可运行 AI 工具</h4>
+                <p>围绕选题、初稿、审核、复盘和社群答疑搭建 AI 工作流，让内容运营从“靠经验执行”变成“流程可复用、工具可体验、结果可复盘”。</p>
                 <div class="career-kpis">
                   <div class="career-kpi-tag"><b>4000+</b><span>获客线索</span></div>
                   <div class="career-kpi-tag"><b>3×</b><span>日更产能</span></div>
@@ -1445,31 +1555,6 @@
             <div class="stage-dots" id="career-dots-new"></div>
             <button class="stage-arrow" id="career-next">→</button>
           </div>
-          <div class="career-method">
-            <div class="career-method-step">
-              <div class="career-method-num">Step 01</div>
-              <div class="career-method-label">发现问题</div>
-              <div class="career-method-sub">从一线运营中识别真实痛点</div>
-              <div class="career-method-arrow">→</div>
-            </div>
-            <div class="career-method-step">
-              <div class="career-method-num">Step 02</div>
-              <div class="career-method-label">建立机制</div>
-              <div class="career-method-sub">将经验提炼为可复制的 SOP</div>
-              <div class="career-method-arrow">→</div>
-            </div>
-            <div class="career-method-step">
-              <div class="career-method-num">Step 03</div>
-              <div class="career-method-label">用 AI 提效</div>
-              <div class="career-method-sub">把 SOP 转化为可交互 AI 原型</div>
-              <div class="career-method-arrow">→</div>
-            </div>
-            <div class="career-method-step">
-              <div class="career-method-num">Step 04</div>
-              <div class="career-method-label">数据验证</div>
-              <div class="career-method-sub">以结果反哺迭代，闭环优化</div>
-            </div>
-          </div>
         </div>
 
         <!-- 业务项目 卡片轮播 -->
@@ -1478,62 +1563,51 @@
             <span class="kicker">Projects</span>
             <h3>业务项目</h3>
           </div>
-          <div class="stage-wrap" id="stage-biz">
-            <div class="stage-track">
+          <div class="biz-grid" id="biz-grid">
               <div class="project-card" data-idx="0">
                 <div class="project-card-dot"></div>
-                <h3>高中志愿矩阵<br>从 0 到 1</h3>
-                <div class="project-card-tags"><span class="project-card-tag">矩阵冷启动</span><span class="project-card-tag">选题机制</span><span class="project-card-tag">跨团队协同</span></div>
+                <h3>高中志愿矩阵内容获客验证</h3>
+                <div class="project-card-tags"><span class="project-card-tag">内容增长</span><span class="project-card-tag">自然流获客</span><span class="project-card-tag">跨团队协同</span></div>
                 <ul class="project-card-list">
-                  <li>零经验垂类，建立热点日历选题 + 混剪 SOP</li>
-                  <li>与高中升学规划部跨学部合作，统筹内容→直播→转化全链路</li>
+                  <li>从 0 搭建垂类矩阵，建立热点选题与内容 SOP</li>
                   <li>粉丝 16W+，播放 5100W+，线索 3600+</li>
-                  <li>GMV 55W+，验证内容→线索完整闭环</li>
+                  <li>沉淀选题、承接、转化、复盘链路</li>
                 </ul>
                 <span class="project-card-link">查看详情</span>
               </div>
               <div class="project-card" data-idx="1">
                 <div class="project-card-dot"></div>
-                <h3>成人英语直播<br>矩阵规模化</h3>
-                <div class="project-card-tags"><span class="project-card-tag">AI 内容生产</span><span class="project-card-tag">创作者分层</span><span class="project-card-tag">规模化复制</span></div>
+                <h3>成人英语账号矩阵规模化</h3>
+                <div class="project-card-tags"><span class="project-card-tag">矩阵复制</span><span class="project-card-tag">内容供给</span><span class="project-card-tag">AI 提效</span></div>
                 <ul class="project-card-list">
                   <li>设计 AI 内容生产链路，单条生产时间降 6 倍</li>
-                  <li>提炼冷启动 SOP，单人独立起号 11 个直播账号，成功率 100%</li>
                   <li>百万爆款 44 条，单条最高 1800W+</li>
-                  <li>全年 GMV 300W，分层赋能机制完整跑通</li>
+                  <li>沉淀内容供给规模化与 AI 提效方法</li>
                 </ul>
                 <span class="project-card-link">查看详情</span>
               </div>
               <div class="project-card" data-idx="2">
                 <div class="project-card-dot"></div>
-                <h3>小红书素人种草<br>与 AI 提效</h3>
-                <div class="project-card-tags"><span class="project-card-tag">内容安全</span><span class="project-card-tag">AI 批量产出</span><span class="project-card-tag">策略响应</span></div>
+                <h3>小红书素人种草与 AI 提效</h3>
+                <div class="project-card-tags"><span class="project-card-tag">合规前置</span><span class="project-card-tag">AI 批量产出</span><span class="project-card-tag">获客效率</span></div>
                 <ul class="project-card-list">
                   <li>合规前置 + AI 批量生产，违规率降 80%+</li>
-                  <li>沉淀 10+ 类高留资内容模型</li>
-                  <li>日更 3→10 篇，人效比提升 3 倍</li>
-                  <li>线索 4000+，AI 赋能后获客效率 +300%</li>
+                  <li>日更 3→10 篇，人效提升 3 倍，线索 4000+</li>
+                  <li>沉淀合规前置、批量生产与获客效率模型</li>
                 </ul>
                 <span class="project-card-link">查看详情</span>
               </div>
               <div class="project-card" data-idx="3">
                 <div class="project-card-dot"></div>
-                <h3>创作者个性化<br>成长机制设计</h3>
-                <div class="project-card-tags"><span class="project-card-tag">冷启动机制</span><span class="project-card-tag">个性化赋能</span><span class="project-card-tag">留存关怀</span></div>
+                <h3>创作者供给与成长机制</h3>
+                <div class="project-card-tags"><span class="project-card-tag">UGC 供给</span><span class="project-card-tag">成长路径</span><span class="project-card-tag">社群赋能</span></div>
                 <ul class="project-card-list">
                   <li>设计五阶孵化流程，起号培养期从 14 天压至 4 天</li>
                   <li>按风格定制脚本框架，孵化成功率 100%</li>
-                  <li>定期与销售团队复盘线索质量，对数据做期维度分析</li>
-                  <li>项目收官零资产流失，机制完整交接</li>
+                  <li>沉淀创作者供给与成长机制</li>
                 </ul>
                 <span class="project-card-link">查看详情</span>
               </div>
-            </div>
-          </div>
-          <div class="stage-arrows">
-            <button class="stage-arrow" id="biz-prev">←</button>
-            <div class="stage-dots" id="biz-dots"></div>
-            <button class="stage-arrow" id="biz-next">→</button>
           </div>
         </div><!-- /works-sub bizprojects -->
 
@@ -1553,34 +1627,31 @@
         <div class="head reveal">
           <span class="kicker">Insights</span>
           <h2 class="title">行业思考</h2>
-          <p class="sub">从一线运营视角出发，对 AI 与创作者生态的持续观察与判断。</p>
+          <p class="sub">这些判断来自一线项目：内容要先被判断，再被稳定生产，最后才值得被 AI 放大。</p>
         </div>
         <div class="insights-grid">
           <div class="insight-card reveal d1">
             <div class="insight-card-num">01</div>
-            <h3 class="insight-card-headline">AI 产品对创作者最大的价值，不是帮他生产内容，而是帮他更快做出正确决策</h3>
+            <h3 class="insight-card-headline">AI 不只是生成内容，更应该辅助运营判断</h3>
             <ul>
-              <li class="insight-card-li">创作者每天最贵的时间，花在"选什么方向、为什么没爆、下一条怎么改"——这些判断节点，而不是写字本身</li>
-              <li class="insight-card-li">未来真正好用的 AI 创作者工具，一定是"给建议＋说理由"，而不是"帮你写一篇"</li>
-              <li class="insight-card-li action">→ 我想做的：把「AI 建议 → 创作者采纳 → 结果反馈」这条链路闭环，让建议越用越准</li>
+              <li class="insight-card-li">内容团队真正耗时的，是判断选题优先级、风险表达、发布节奏和下一步优化方向。</li>
+              <li class="insight-card-li action">我更关注「建议是否被采纳」和「采纳后是否带来结果」。</li>
             </ul>
           </div>
           <div class="insight-card reveal d2">
             <div class="insight-card-num">02</div>
-            <h3 class="insight-card-headline">创作者运营的下一步，是把平台经验做成可迁移的产品机制，而不是人盯人</h3>
+            <h3 class="insight-card-headline">内容供给要规模化，不能只靠人盯人</h3>
             <ul>
-              <li class="insight-card-li">靠运营人员一对一赋能，天花板很明显——规模一大，质量必然下降，成本也无法承受</li>
-              <li class="insight-card-li">真正能规模化的方式，是把有效的运营 SOP 内嵌进产品流程，让产品替代人力做赋能</li>
-              <li class="insight-card-li action">→ 我的判断：AI 产品运营不是新工种，而是运营能力 × AI 落地能力的融合，这个交叉点现在还没多少人站</li>
+              <li class="insight-card-li">一对一赋能可以跑通样板，但长期要靠分层、模板、反馈节奏和成长路径。</li>
+              <li class="insight-card-li action">好的运营机制，应该让更多创作者稳定产出，而不是只依赖少数人爆发。</li>
             </ul>
           </div>
           <div class="insight-card reveal d3">
             <div class="insight-card-num">03</div>
-            <h3 class="insight-card-headline">AI 产品的迭代方向，应该由"创作者真的用了吗"来决定，而不是模型能力有多强</h3>
+            <h3 class="insight-card-headline">AI 工具是否有效，要看有没有改变工作流</h3>
             <ul>
-              <li class="insight-card-li">模型能力已经足够好，现在的瓶颈是：创作者不知道怎么用、用完不信任、用了但没改变行为</li>
-              <li class="insight-card-li">衡量一个 AI 功能是否有效，核心指标应该是采纳率和行为改变率，而不是生成质量评分</li>
-              <li class="insight-card-li action">→ 接下来想做的：在平台侧建立完整的 AI 建议采纳率追踪机制，以数据反哺驱动产品迭代</li>
+              <li class="insight-card-li">模型能力已经足够强，真正的问题是团队是否愿意用、是否信任输出、是否因此改变流程。</li>
+              <li class="insight-card-li action">我会用采纳率、节省时长、发布量、线索质量和复盘效率来判断工具价值。</li>
             </ul>
           </div>
         </div>
@@ -1593,18 +1664,23 @@
       <div class="wrap">
         <div class="contact-intro reveal">
           <span class="kicker">Contact</span>
-          <p class="contact-tagline"><span id="contactTypewriter"></span><span class="contact-cursor">|</span></p>
-          <p class="sub">在找一个能把业务经验和 AI 产品能力都用上的岗位。</p>
+          <p class="contact-tagline"><span class="line line-muted">正在看新的机会</span><span class="line line-strong">欢迎交流</span></p>
         </div>
         <div class="contact-layout">
           <!-- 左栏：简洁状态 -->
           <div class="reveal-left">
             <div class="contact-avail">
               <span class="avail-chip avail-chip-em">📍 北京</span>
-              <span class="avail-chip avail-chip-em">一周内到岗</span>
-              <span class="avail-chip avail-chip-em">欢迎约面试</span>
+              <span class="avail-chip avail-chip-em">内容增长</span>
+              <span class="avail-chip avail-chip-em">AI 工具实践</span>
             </div>
-            <p class="contact-belief">在做创作者平台、内容工具或 AI 产品？欢迎聊聊——我有真实验证过的业务经验，也有可以运行的 AI 原型。</p>
+            <p class="contact-belief">内容结果、创作者协作、增长复盘和 AI 工具化，是我目前最核心的能力组合。</p>
+            <div class="contact-proof-grid">
+              <div class="contact-proof"><b>内容判断</b><span>选题、平台语感、内容模型</span></div>
+              <div class="contact-proof"><b>供给机制</b><span>账号矩阵、创作者协作、SOP</span></div>
+              <div class="contact-proof"><b>增长承接</b><span>自然流线索、转化复盘</span></div>
+              <div class="contact-proof"><b>AI 工具化</b><span>选题、审核、社群、复盘</span></div>
+            </div>
           </div>
           <!-- 右栏：联系方式列表 -->
           <div class="contact-rows reveal-right">
@@ -1643,7 +1719,7 @@
       <nav class="footer-nav">
         <a href="#about">关于我</a><a href="#works">AI 工具</a><a href="#career-section">工作经历</a><a href="#insights">思考</a><a href="#contact">联系</a>
       </nav>
-      <p class="footer-copy">© 2026 张彪. All Rights Reserved. Built with ❤️ and Vibe Coding for AI Product Operations.</p>
+      <p class="footer-copy">© 2026 张彪. All Rights Reserved. Built with Vibe Coding for AI Content Growth Operations.</p>
     </div>
   </footer>
 
@@ -1710,7 +1786,7 @@
 
     document.querySelectorAll('.project-accordion-btn').forEach(btn=>{btn.addEventListener('click',()=>{const c=btn.nextElementSibling;btn.classList.toggle('active');c.style.maxHeight=c.style.maxHeight?null:c.scrollHeight+'px'})});
 
-    document.querySelectorAll('.proto,.project-card,.insight-card').forEach(c=>{c.addEventListener('mousemove',e=>{const r=c.getBoundingClientRect();c.style.setProperty('--mouse-x',`${e.clientX-r.left}px`);c.style.setProperty('--mouse-y',`${e.clientY-r.top}px`);c.style.setProperty('--mx',`${e.clientX-r.left}px`);c.style.setProperty('--my',`${e.clientY-r.top}px`)})});
+    document.querySelectorAll('.proto,.project-card,.insight-card,.role-proof-card').forEach(c=>{c.addEventListener('mousemove',e=>{const r=c.getBoundingClientRect();c.style.setProperty('--mouse-x',`${e.clientX-r.left}px`);c.style.setProperty('--mouse-y',`${e.clientY-r.top}px`);c.style.setProperty('--mx',`${e.clientX-r.left}px`);c.style.setProperty('--my',`${e.clientY-r.top}px`)})});
     document.querySelectorAll('.cap,.project,.skill-card').forEach(c=>{c.addEventListener('mousemove',e=>{const r=c.getBoundingClientRect();c.style.setProperty('--mx',`${e.clientX-r.left}px`);c.style.setProperty('--my',`${e.clientY-r.top}px`)})});
     const heroGlow=document.getElementById('heroGlow');
     document.querySelector('.hero').addEventListener('mousemove',e=>{heroGlow.style.setProperty('--mx',`${(e.clientX/window.innerWidth*100).toFixed(1)}%`);heroGlow.style.setProperty('--my',`${(e.clientY/window.innerHeight*100).toFixed(1)}%`)});
@@ -1855,21 +1931,6 @@
 
     initStage('stage-protos',  '.proto-card',  'protos-prev',  'protos-next',  'protos-dots');
     initStage('stage-career',  '.career-card', 'career-prev',  'career-next',  'career-dots-new');
-    initStage('stage-biz',     '.project-card','biz-prev',     'biz-next',     'biz-dots');
-
-    // 方法论步骤 hover 高亮
-    (function(){
-      const steps = document.querySelectorAll('.career-method-step');
-      steps.forEach(step => {
-        step.addEventListener('mouseenter', () => {
-          steps.forEach(s => s.classList.remove('active'));
-          step.classList.add('active');
-        });
-        step.addEventListener('mouseleave', () => {
-          step.classList.remove('active');
-        });
-      });
-    })();
 
     // 行业思考卡片 hover 放大高亮
     (function(){
@@ -1886,7 +1947,7 @@
     })();
 
     // 绑定"查看详情"点击 → 打开对应 project modal
-    document.querySelectorAll('#stage-biz .project-card').forEach((card, i) => {
+    document.querySelectorAll('#biz-grid .project-card').forEach((card, i) => {
       const link = card.querySelector('.project-card-link');
       if (link) {
         link.style.cursor = 'pointer';
@@ -1900,42 +1961,42 @@
     // === Language Toggle (中/EN) ===
     const i18n={
       zh:{
-        heroTag:'张彪 | 运营出身 · 产品思维',
-        heroH1:'<span class=”h1-line1”>creator ops · ai product · 4 years</span><span class=”h1-line2”>做了 4 年创作者运营<br><span class=”highlight-text”>现在想把经验<br>变成产品</span></span>',
-        heroLead:'在高途深耕近 4 年，从孵化 IP、搭建矩阵，到设计分层机制——每一步都在试图把”有效的经验”变成可复制的东西。现在更进一步：把验证过的业务 SOP 做成 5 个 AI 原型，找到 AI 在创作者工作流里真正有价值的介入点。',
-        btnProto:'查看 AI 工具 →',
+        heroTag:'张彪 | 内容增长 · 创作者协作 · AI 工具实践',
+        heroH1:'<span class="h1-line1">content growth · creator ecosystem · ai ops</span><span class="h1-line2">从内容增长结果<br><span class="highlight-text">到创作者机制<br>再到 AI 工具化</span></span>',
+        heroLead:'近 4 年教培行业内容增长与创作者运营经验，做过账号矩阵、内容供给、自然流获客和 AI 提效。我更擅长把跑通过的运营方法沉淀成机制，再做成可复用的工具。',
+        btnProto:'查看 AI 作品 →',
         btnCareer:'查看工作经历 →',
-        btnContact:'联系我',
+        btnContact:'联系方式',
         brandName:'张彪',
-        brandSub:'AI 产品运营 · 创作者增长',
+        brandSub:'内容增长与 AI 运营实践',
         aboutTitle:'关于我',
-        aboutSub:'新闻学出身，4 年创作者运营，从内容执行到机制设计，再到用 AI 把经验产品化。',
-        worksTitle:'<span class="works-title-line1">Vibe Coding × 业务经验</span><span class="works-title-line2">5 个上线可用的 AI 工具</span>',
-        worksSub:'用 Claude Code 从 0 写到上线，验证 AI 在创作者工作流里哪些节点真正有效。',
+        aboutSub:'新闻学背景让我更重视内容判断。近 4 年教培行业内容增长与创作者运营经历，让我理解内容如何变成稳定供给、自然流量和转化结果。',
+        worksTitle:'<span class="works-title-line1">AI 工具作品</span><span class="works-title-line2">从真实业务问题到可体验工具</span>',
+        worksSub:'这些工具不是孤立展示，而是从真实运营动作里拆出来的：选题、审核、社群、复盘、增长计划。先发现高频问题，再沉淀 SOP，最后做成可体验的 AI 工作流。',
         expProjTitle:'工作经历 & 业务项目',
-        expProjSub:'4 年高途深耕，从内容执行到机制设计——这是 AI 原型背后的真实业务支撑。',
+        expProjSub:'这一部分把时间线和项目结果放在一起：工作经历用于快速理解业务背景，业务项目用于展开具体动作、数据结果和方法沉淀。',
         insightTitle:'行业思考',
-        insightSub:'从一线运营视角出发，对 AI 与创作者生态的持续观察与判断。',
-        contactSub:'在找一个能把业务经验和 AI 产品能力都用上的岗位。',
+        insightSub:'这些判断来自一线项目：内容要先被判断，再被稳定生产，最后才值得被 AI 放大。',
+        contactSub:'',
       },
       en:{
-        heroTag:'Zhang Biao | Ops Background · Product Thinking',
-        heroH1:'<span class=”h1-line1”>creator ops · ai product · 4 years</span><span class=”h1-line2”>The bottleneck isn\'t effort—<br><span class=”highlight-text”>it\'s the decision path</span></span>',
-        heroLead:'4 years in creator operations for education, covering the full pipeline: topic selection → creation → publishing → review → growth. Built 50+ account matrix, incubated 100+ streamers, and developed 5 AI prototype tools transforming real business experience into interactive AI product mechanisms.',
-        btnProto:'View AI Tools →',
+        heroTag:'Zhang Biao | Content Judgment · Supply Systems · AI Tools',
+        heroH1:'<span class="h1-line1">content judgment · supply system · ai workflow</span><span class="h1-line2">From content judgment<br><span class="highlight-text">to reusable<br>AI ops systems</span></span>',
+        heroLead:'My work follows one chain: decide what content is worth making, organize who can produce it consistently, turn traffic into leads, and use data to keep improving. This portfolio connects my business projects, results and AI tools into one operating capability chain.',
+        btnProto:'View AI Works →',
         btnCareer:'View Career →',
         btnContact:'Contact Me',
         brandName:'Zhang Biao',
-        brandSub:'AI Product Ops · Creator Growth',
+        brandSub:'Content Ops & AI Tools',
         aboutTitle:'About Me',
-        aboutSub:'Journalism background, 4 years in creator ops — from content execution to system design, to productizing experience with AI.',
-        worksTitle:'<span class="works-title-line1">Vibe Coding × Real Business Experience</span><span class="works-title-line2">5 Deployed AI Tools</span>',
-        worksSub:'Built with Claude Code from scratch — validating where AI truly adds value in creator workflows.',
+        aboutSub:'Journalism trained my content judgment; frontline operations taught me how content becomes supply, traffic and conversion. This site records how I turn real business problems into results, mechanisms and AI tools.',
+        worksTitle:'<span class="works-title-line1">AI Tool Works</span><span class="works-title-line2">From Real Business Problems to Usable Tools</span>',
+        worksSub:'These tools are not isolated demos. They follow one operating chain: topics, production, review, community feedback, postmortems and growth actions.',
         expProjTitle:'Career & Business Projects',
-        expProjSub:'4 years at Gaotu — from content execution to system design. The real business foundation behind every AI prototype.',
+        expProjSub:'A business record across content results, creator collaboration mechanisms and AI-assisted workflows.',
         insightTitle:'Industry Insights',
-        insightSub:'Ongoing observations and perspectives on AI and the creator ecosystem, from a frontline operations lens.',
-        contactSub:'Looking for a role where both business experience and AI product skills matter.',
+        insightSub:'Ongoing observations on AI, content growth and creator ecosystems from a frontline operations lens.',
+        contactSub:'If you are interested in my experience, projects or AI tools, feel free to reach out.',
       }
     };
     let currentLang='zh';
@@ -1991,55 +2052,55 @@
     const modalData = {
       projects: [
         {
-          title: '高中志愿矩阵 从 0 到 1',
-          subtitle: '矩阵冷启动 · 选题机制 · 跨团队协同',
-          tags: ['矩阵冷启动', '选题机制', '跨团队协同'],
+          title: '高中志愿矩阵内容获客验证',
+          subtitle: '内容增长 · 自然流获客 · 跨团队协同',
+          tags: ['内容增长', '自然流获客', '跨团队协同'],
           challenge: '团队没有高中志愿垂类的内容经验，账号从零开始，需要在竞争激烈的高考赛道快速跑通从选题到转化的完整链路。',
           actions: [
-            { label: '选题机制', desc: '建立热点日历机制，提前锁定高考节点（报名/出分/录取）对应爆款选题，同步沉淀混剪 SOP，让非专业主播也能稳定产出' },
+            { label: '选题机制', desc: '建立热点日历机制，提前锁定高考节点（报名/出分/录取）对应爆款选题，同步沉淀混剪 SOP，让非专业内容账号也能稳定产出' },
             { label: '账号矩阵', desc: '同时运营 3 个差异化账号（升学干货 / IP 主讲 / 素人种草），避免相互竞争，覆盖不同决策阶段用户' },
-            { label: '跨团队推动', desc: '协调产品、设计、主播、教研多角色，制定周度内容排期与审核节奏，减少协同摩擦' },
+            { label: '跨团队推动', desc: '协调产品、设计、内容出镜、教研多角色，制定周度内容排期与审核节奏，减少协同摩擦' },
           ],
-          insight: '热点前置 + 差异化矩阵 = 冷启动不依赖单点爆款，靠节奏覆盖把流量转化稳定化。',
+          insight: '项目沉淀：内容增长不是只追爆款，而是把选题、账号矩阵、线索承接和转化复盘做成稳定链路。',
           kpis: [{ val: '16W+', lbl: '矩阵粉丝' }, { val: '5100W+', lbl: '总播放量' }, { val: '3600+', lbl: '获客线索' }, { val: '55W+', lbl: 'GMV 贡献' }],
         },
         {
-          title: '成人英语直播矩阵规模化',
-          subtitle: 'AI 内容生产 · 创作者分层 · 规模化复制',
-          tags: ['AI 内容生产', '创作者分层', '规模化复制'],
-          challenge: '成人英语赛道账号数量多但质量参差，人工生产封面和文案效率极低，主播起号成功率不稳定，难以规模化复制。',
+          title: '成人英语账号矩阵规模化',
+          subtitle: '矩阵复制 · 内容供给 · AI 提效',
+          tags: ['矩阵复制', '内容供给', 'AI 提效'],
+          challenge: '成人英语赛道账号数量多但质量参差，人工生产封面和文案效率极低，账号冷启动成功率不稳定，难以规模化复制。',
           actions: [
-            { label: 'AI 生产链路', desc: '用 Midjourney 批量生成封面素材，豆包生成差异化文案钩子，将单条内容生产时间从 2 小时压缩至 20 分钟' },
-            { label: '冷启动 SOP', desc: '提炼出"前 7 天发布节奏 + 评论区引导话术 + 直播间首场脚本"三件套，单人从 0 起号 11 个账号，成功率 100%' },
-            { label: '创作者分层', desc: '按粉丝量和带货能力将创作者分为素人 / 腰部 / IP 主讲三层，针对性制定赋能策略和 GMV 考核标准' },
+            { label: 'AI 生产链路', desc: '用 AI 工具辅助封面素材与差异化文案钩子生成，将单条内容生产时间从 2 小时压缩至 20 分钟' },
+            { label: '冷启动 SOP', desc: '提炼出"前 7 天发布节奏 + 评论区引导话术 + 首场转化脚本"三件套，单人从 0 起号 11 个账号，成功率 100%' },
+            { label: '创作者分层', desc: '按粉丝量、内容能力和转化能力将创作者分为素人 / 腰部 / IP 主讲三层，针对性制定赋能策略和考核标准' },
           ],
-          insight: 'AI 工具降低内容生产门槛，SOP 保证执行一致性，两者结合才能让规模化不失控。',
+          insight: '项目沉淀：内容供给要做大，不能只靠个人灵感，而要靠 SOP、分层机制和 AI 提效一起支撑。',
           kpis: [{ val: '11个', lbl: '单人起号' }, { val: '44条', lbl: '百万爆款' }, { val: '1800W+', lbl: '单条最高播放' }, { val: '300W', lbl: '全年 GMV' }],
         },
         {
           title: '小红书素人种草与 AI 提效',
-          subtitle: '内容安全 · AI 批量产出 · 策略响应',
-          tags: ['内容安全', 'AI 批量产出', '策略响应'],
+          subtitle: '合规前置 · AI 批量产出 · 获客效率',
+          tags: ['合规前置', 'AI 批量产出', '获客效率'],
           challenge: '平台合规政策收紧，大量笔记因违规被限流，同时人工产出瓶颈导致日更数量不足，线索获取效率低。',
           actions: [
             { label: '合规前置', desc: '梳理平台敏感词库与内容红线，形成《素人种草合规手册》，在文案生产前置审查，违规率下降 80%+' },
-            { label: 'AI 批量生产', desc: '用 DeepSeek / 豆包接入选题模板，批量生成 10 类差异化留资内容，日更从 3 篇提升至 10 篇，人效比提升 3 倍' },
+            { label: 'AI 批量生产', desc: '用 AI 工作流接入选题模板，批量生成 10 类差异化留资内容，日更从 3 篇提升至 10 篇，人效比提升 3 倍' },
             { label: '内容模型沉淀', desc: '研发"痛点场景型 / 对比反转型 / 数据背书型"等 10+ 类高留资内容模型，按用户决策阶段匹配投放' },
           ],
-          insight: '合规不是约束，是竞争壁垒——别人踩雷时你在跑量，这才是 AI 提效的真实价值。',
+          insight: '项目沉淀：AIGC 内容实践要同时考虑效率、平台规则和获客质量，AI 不是炫技，而是降低规模化风险。',
           kpis: [{ val: '4000+', lbl: '获客线索' }, { val: '80W+', lbl: 'GMV' }, { val: '300%', lbl: '线索效率提升' }, { val: '10+', lbl: '内容模型' }],
         },
         {
-          title: '创作者个性化成长机制设计',
-          subtitle: '冷启动机制 · 个性化赋能 · 留存关怀',
-          tags: ['冷启动机制', '个性化赋能', '留存关怀'],
-          challenge: '主播孵化流程标准化程度低，新主播起号周期长（两周以上），中途流失率高，且项目结束时面临团队过渡风险。',
+          title: '创作者供给与成长机制',
+          subtitle: 'UGC 供给 · 成长路径 · 社群赋能',
+          tags: ['UGC 供给', '成长路径', '社群赋能'],
+          challenge: '创作者供给流程标准化程度低，新账号起号周期长（两周以上），中途流失率高，且项目结束时面临团队过渡风险。',
           actions: [
-            { label: '全生命周期孵化', desc: '设计「招聘→培训→试播→成长→复盘」五阶孵化流程，每阶段配置明确的 checklist 和 Pass 标准，将主播从入职到正式上播的标准化流程前置，起号培养期从两周压至 4 天，显著降低项目试错成本与启动周期' },
-            { label: '个性化赋能', desc: '根据主播风格（知识型 / 情感型 / 带货型）定制脚本框架和互动话术，避免千人一面的内容同质化' },
-            { label: '留存关怀机制', desc: '建立主播成长积分体系 + 定期 1v1 复盘，项目收官期零资产流失，平稳完成交接' },
+            { label: '全生命周期机制', desc: '设计「招募→培训→试播→成长→复盘」五阶流程，每阶段配置明确 checklist 和 Pass 标准，将起号培养期从两周压至 4 天' },
+            { label: '个性化赋能', desc: '根据创作者风格（知识型 / 情感型 / 转化型）定制脚本框架和互动话术，避免千人一面的内容同质化' },
+            { label: '留存关怀机制', desc: '建立成长积分体系 + 定期 1v1 复盘，项目收官期零资产流失，平稳完成交接' },
           ],
-          insight: '创作者成长不是"给资源"，而是"给确定性"——清晰的路径和及时的反馈，比流量扶持更有效。',
+          insight: '项目沉淀：创作者成长的关键，是稳定路径和及时反馈，而不是临时给资源。',
           kpis: [{ val: '100%', lbl: '孵化成功率' }, { val: '4天', lbl: '起号培养期' }, { val: '0', lbl: '资产流失' }],
         },
       ],
@@ -2092,7 +2153,7 @@
             '面向中小创作者的数据复盘与智能成长决策助手',
             '读取近 5 条内容多维指标（播放/完播/互动等），输出「问题→归因→改进建议」',
             '配套 7 天增长计划，将人工复盘 SOP 转化为 AI 自动化诊断机制',
-            '验证数据驱动型创作者助手的交互形态与产品价值',
+            '验证创作者复盘助手的交互形态与工具价值',
           ],
           kpis: [{ val: '5条', lbl: '内容多维分析' }, { val: '7天', lbl: '增长计划' }, { val: '自动化', lbl: '复盘诊断' }],
         },
@@ -2103,11 +2164,11 @@
           link: 'https://rango-bot441.github.io/douyin-creator-growth-ai-toolchain/prd-copilot/',
           points: [
             '输入产品需求描述，AI 自动拆解用户故事、功能边界与验收标准',
-            '辅助产品经理快速生成结构化 PRD 文档，降低文档撰写门槛',
-            '将 AI 能力产品化的思路延伸到"产品侧"，对应求职岗位的产品规划能力',
-            '验证「AI 辅助产品经理」的产品形态与工作流集成价值',
+            '辅助运营同学快速生成结构化需求文档，降低协作沟通成本',
+            '将 AI 能力产品化的思路延伸到运营协作侧，用于提升结构化表达和沟通效率',
+            '验证「AI 辅助需求拆解」的产品形态与工作流集成价值',
           ],
-          kpis: [{ val: '结构化', lbl: 'PRD 输出' }, { val: '自动化', lbl: '需求拆解' }, { val: '对标 JD', lbl: '产品能力验证' }],
+          kpis: [{ val: '结构化', lbl: 'PRD 输出' }, { val: '自动化', lbl: '需求拆解' }, { val: '运营', lbl: '产品化表达' }],
         },
       ],
     };
@@ -2235,7 +2296,7 @@
       const lines = [
         { el: document.getElementById('aqLine1'), text: '从运营执行者' },
         { el: document.getElementById('aqLine2'), text: '到项目操盘手' },
-        { el: document.getElementById('aqLine3'), text: 'AI 产品运营的践行者' },
+        { el: document.getElementById('aqLine3'), text: 'AI 工具实践者' },
       ];
       const cursor = document.getElementById('aqCursor');
       let started = false;
@@ -2310,60 +2371,6 @@
       }
     })();
 
-    // === Contact Tagline Typewriter ===
-    (function(){
-      const el = document.getElementById('contactTypewriter');
-      if (!el) return;
-      const text1 = '在做创作者产品？';
-      const text2 = '欢迎来聊。';
-      let started = false;
-
-      function typeText(str, colored, cb) {
-        let i = 0;
-        function tick() {
-          if (colored) {
-            el.innerHTML = '<span style="color:rgba(255,255,255,.75)">' + text1 + '</span>'
-              + '<span style="color:#fff;font-weight:900">' + str.slice(0, i+1) + '</span>';
-          } else {
-            el.textContent = str.slice(0, i+1);
-          }
-          i++;
-          if (i < str.length) setTimeout(tick, 80);
-          else if (cb) setTimeout(cb, 300);
-        }
-        tick();
-      }
-
-      function start() {
-        if (started) return;
-        started = true;
-        el.textContent = '';
-        // 先打第一段，再接着打第二段（橙色高亮）
-        let i = 0;
-        function phase1() {
-          el.textContent = text1.slice(0, i+1);
-          i++;
-          if (i < text1.length) setTimeout(phase1, 72);
-          else setTimeout(phase2, 200);
-        }
-        let j = 0;
-        function phase2() {
-          el.innerHTML = '<span style="color:rgba(255,255,255,.72)">' + text1 + '</span>'
-            + '<span style="color:#fff">' + text2.slice(0, j+1) + '</span>';
-          j++;
-          if (j < text2.length) setTimeout(phase2, 88);
-        }
-        phase1();
-      }
-
-      const contactSec = document.getElementById('contact');
-      if (contactSec) {
-        const obs = new IntersectionObserver(entries => {
-          if (entries[0].isIntersecting) { start(); obs.disconnect(); }
-        }, { threshold: 0.3 });
-        obs.observe(contactSec);
-      }
-    })();
 
   </script>
 </body>
